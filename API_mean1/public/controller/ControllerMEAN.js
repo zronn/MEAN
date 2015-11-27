@@ -151,6 +151,9 @@ app.config(['$routeProvider',
             templateUrl: 'view/ViewEditCommentaire.html',
             controller: 'EditCommentaireCtrl'
         }).
+        when('/', {
+            templateUrl: 'view/ViewIndex.html'
+        }).
         otherwise({
             redirectTo: '/'
         });

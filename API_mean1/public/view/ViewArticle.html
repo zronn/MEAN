@@ -8,7 +8,16 @@
                         <div class="testimonials">
                             <div class="active item">
                                 <h3 class="titretext">{{ x.title }}</h3>
-                                <blockquote><p>{{ x.resum }}</p></blockquote>
+                                <blockquote>
+                                    <p>
+                                        {{ x.resum }}
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        <em>Article écrit par <b>{{ x.name }}</b></em>
+                                    </p>
+                                </blockquote>
                                 <a href="/#/article/{{x._id}}/edit">Edit article</a>
                                 <div class="carousel-info">
                                     <div class="pull-left">

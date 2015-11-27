@@ -2,19 +2,19 @@
     <div class="row content">
         <div class="article" ng-repeat="x in articles">
 
-
             <div class="container content">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <div class="testimonials">
                             <div class="active item">
+                                <h3 class="titretext">{{ x.title }}</h3>
                                 <blockquote><p>{{ x.resum }}</p></blockquote>
+                                <a href="/#/article/{{x._id}}/edit">Edit article</a>
                                 <div class="carousel-info">
-                                    <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
                                     <div class="pull-left">
-                                        <span class="testimonials-name">Lina Mars</span>
-                                        <span class="testimonials-post">Commercial Director</span>
+                                        <span class="testimonials-name">{{ x.pseudo }}</span>
                                     </div>
+                                    <a href="/#/commentaire/{{x._id}}">Voir commentaires</a>
                                 </div>
                             </div>
                         </div>
@@ -22,12 +22,6 @@
                 </div>
             </div>
 
-
-
-            <h3 class="titretext">{{ x.title }}</h3>
-            <textarea class="textcontent text-left textaff">{{ x.resum }}</textarea>
-            <a href="/#/commentaire/{{x._id}}">Voir commentaires</a>
-            <a href="/#/article/{{x._id}}/edit">Edit article</a>
 
         </div>
         <hr>

@@ -1,0 +1,36 @@
+textarea {
+    resize: none;
+    overflow-scrolling: auto;
+    width: 550px;
+    height: 350px;
+}
+.textaff{
+    resize: none;
+    overflow-scrolling: auto;
+    width: 100%;
+    height: 300px;
+}
+.titretext{
+    color: darkblue;
+}
+.textcontent{
+    border: solid 2px darkcyan;
+    margin-bottom: 40px;
+}
+.article{
+    border-top: solid 5px;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
+.titre{
+    resize: none;
+    width: 550px;
+    height: 30px;
+
+}
+.pseudo{
+    resize: none;
+    width: 250px;
+    height: 30px;
+}

@@ -1,0 +1,28 @@
+<div class="container-fluid text-center" ng-app="app">
+    <div class="row content">
+        <div class="article" ng-repeat="x in articles">
+            <h3 class="titretext">{{ x.title }}</h3>
+            <textarea class="textcontent text-left textaff">{{ x.resum }}</textarea>
+            <a href="/#/commentaire/{{x._id}}">Voir commentaires</a>
+            <a href="/#/article/{{x._id}}/edit">Edit article</a>
+
+        </div>
+        <hr>
+        <div ng-controller="AddArticle">
+            <label class="text-left">Pseudo</label>
+            <br>
+            <textarea class="left pseudo" placeholder="Entrer votre pseudo" ng-model="namePseudoArt"></textarea>
+            <br>
+            <label class="text-left">Titre</label>
+            <br>
+            <textarea class="left titre" placeholder="Entrer votre titre" ng-model="titleArt"></textarea>
+            <br>
+            <label class="text-left">Article</label>
+            <br>
+            <textarea class="left" placeholder="Enter votre article" ng-model="textArt"></textarea>
+            <br>
+            <button ng-click="AddArt()">Envoyer</button>
+            <p>{{ messageAddArt }}</p>
+        </div>
+    </div>
+</div>
